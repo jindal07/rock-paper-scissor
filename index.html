@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StopWatch</title>
-    <link rel="icon" href="./stopwatch.png" type="icon">
+    <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./rock-paper-scissors.png" type="icon">
 </head>
 <body>
-    <h1>StopWatch</h1>
-    <div class="timer">00:00:00</div>
-    <div class="buttons">
-        <button class="btn start">Start</button>
-        <button class="btn stop">Stop</button>
-        <button class="btn reset">Reset</button>
+    <h1>Rock Paper Scissors Game</h1>
+    <h3>Choose your move:</h3>
+    <div class="main" >
+        <button id="rock" class="icon rock">👊</button>
+        <button id="paper" class="icon paper">🖐️</button>
+        <button id="scissor" class="icon scissor">✌️</button>
     </div>
+    <h3 class="win-status"></h3>
+    <h2 >Your score: <span class="player">5</span>   Computer Score: <span class="comp">4</span></h2>
 
+    <button class="restart">Restart</button>
     <script src="./index.js"></script>
 </body>
 </html>

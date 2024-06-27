@@ -1,58 +1,103 @@
 body{
+    margin: 0 ;
+    overflow: hidden;
+    padding: 0;
     display: flex;
+    background-color: #EDE7D9;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0;
-    height: 100vh;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #C3E8BD;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1{
-    font-size: 80px;
-    color: #222f1b;
+    text-align: center;
+    font-size: 50px;
+    color: #4B4237;
 }
 
-
-.timer{
-    font-size: 80px;
-    font-weight: bold;
-    margin: 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h2{
+    font-size: 25px;
+    color: #4B4237;
 }
 
-@media (width<=425px) {
-    .timer{
-        font-size: 60px;
-        
-    }
-    h1{
-        
-        font-size: 60px;
-       
-    }
-    .buttons{
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-
-.btn{
-    border: none;
-    padding: 10px;
-    margin: 10px;
+h3{
     font-size: 30px;
-    border-radius: 10px;
-    font-weight: 500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:#39502d;
-    color: #D6FFB7;
-    box-shadow: 0 0 5px black;
+    color: #736B60;   
+}
+
+.main{
+    display: flex;
+    gap: 40px;
+}
+
+.icon{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    border-radius: 7px;
+    box-shadow: 0 0 3px black inset;
+    border: 0;
+    cursor: pointer;
     transition: background-color 300ms ease;
 }
 
-.btn:hover{
-    background-color: #222f1b;
+
+.rock{
+    background-color: red;
+}
+.rock:hover{
+    background-color: rgb(177, 0, 0);
+}
+
+.paper{
+    background-color: #2196f3;
+}
+.paper:hover{
+    background-color: #016bc2;
+}
+
+.scissor{
+    background-color: #4caf50;
+}
+.scissor:hover{
+    background-color: #1b5e20;
+}
+
+.player{
+    color: #2196f3;
+}
+
+.comp{
+    color: red;
+}
+
+.restart{
+    border-radius: 5px;
+    border: 0;
+    font-size: 30px;
+    padding: 5px 10px;
+    background-color: #4B4237;
+    color: #EDE7D9;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+.restart:hover{
+    background-color: #312c25;
+}
+
+@media(width<=425px){
+    .restart{
+        font-size: 25px;
+    }
+    .icon{
+        font-size: 35px;
+    }
+    h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
